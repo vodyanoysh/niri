@@ -146,6 +146,7 @@ binds {
 }
 spawn-at-startup "hyprlock"
 spawn-at-startup "swww-daemon"
+spawn-at-startup "waybar"
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 spawn-at-startup "wl-paste" "--type text" "--watch" "cliphist" "store"
 window-rule {
