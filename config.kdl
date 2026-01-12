@@ -4,11 +4,12 @@ input {
     keyboard {
         xkb {
             layout "us,ru"
-            options "grp:win_space_toggle,lv3:ralt_switch"
+            // options "grp:win_space_toggle,caps_toggle,lv3:ralt_switch"
+            // options "grp:caps_toggle,win_space_toggle,caps:none"
+            options "grp:alt_shift_toggle,caps:none"
         }
         repeat-delay 300
         repeat-rate 35
-
         numlock
     }
 
@@ -66,7 +67,6 @@ layout {
         active-color "#7fc8ff"
         inactive-color "#505050"
     }
-
     border {
         width 1
         active-color "#7fb4ca"
@@ -98,10 +98,8 @@ layout {
 // spawn-at-startup "waybar"
 spawn-sh-at-startup "qs -c ~/.config/quickshell/noctalia-shell/"
 spawn-sh-at-startup "swaybg -i ~/Pictures/bg_green.jpg"
-
 hotkey-overlay {
 }
-
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 animations {
