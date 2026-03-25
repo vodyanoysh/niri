@@ -41,6 +41,15 @@ output "eDP-1" {
     position x=0 y=0
 }
 
+// output "HDMI-A-1" {
+//     mode "2560x1440@144.002"
+//     transform "normal"
+//     scale 1
+//     // position x=0 y=-1080
+//     position x=1600 y=0
+//
+// }
+
 output "HDMI-A-1" {
     mode "2560x1440@144.002"
     transform "normal"
@@ -49,6 +58,7 @@ output "HDMI-A-1" {
     position x=1600 y=0
 
 }
+
 
 layout {
     gaps 5
@@ -283,4 +293,6 @@ binds {
     Ctrl+Alt+Delete { quit; }
 
     Mod+Shift+P { power-off-monitors; }
+
+    Mod+Shift+M { spawn-sh "~/.config/niri/toggle-hdmi.sh"; }
 }
