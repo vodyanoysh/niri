@@ -47,7 +47,7 @@ output "HDMI-A-1" {
     transform "normal"
     scale 1
     // position x=0 y=-1080
-    position x=1493 y=0
+    position x=1600 y=0
 
 }
 
@@ -284,7 +284,6 @@ binds {
     Mod+Shift+V { toggle-window-floating; }
     Mod+Alt+V   { switch-focus-between-floating-and-tiling; }
     Mod+V hotkey-overlay-title="Toggle Clipboard History" { spawn-sh "dms ipc call clipboard toggle"; }
-    Mod+S hotkey-overlay-title="Toggle Workspace Picker" { spawn-sh "dms ipc call widget toggle workspacePicker"; }
 
     Mod+W { toggle-column-tabbed-display; }
 
@@ -303,5 +302,3 @@ binds {
 
     F9 hotkey-overlay-title="Toggle Scratch Terminal" { spawn-sh "~/.config/niri/scratch-term.sh"; }
 }
-
-include "dms/outputs.kdl"
